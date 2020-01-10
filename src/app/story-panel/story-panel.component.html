@@ -1,0 +1,5 @@
+<div class="story-count" (click)="collapsedStoryList=!collapsedStoryList">
+  {{count}} new stories
+  <fa-icon [icon]="collapsedStoryList ?  faChevronCircleDown : faChevronCircleUp"></fa-icon>
+</div>
+<app-story-list *ngIf="!collapsedStoryList"></app-story-list>

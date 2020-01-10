@@ -1,0 +1,10 @@
+<div class="container"  [class.collapsed]="collapsed" >
+  <div class="content" #content>
+    <ng-content></ng-content>
+  </div>
+  <div class="alpha" *ngIf="collapsed">
+  </div>
+  <div class="chevron">
+    <fa-icon [icon]="chevronIcon" (click)="toggle()"></fa-icon>
+  </div>
+</div>

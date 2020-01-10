@@ -1,0 +1,50 @@
+$g-breakpoint-mobile: 480px;
+$g-breakpoint-tablet: 768px;
+$g-breakpoint-desktop: 900px;
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .user-pic {
+    order: 2;
+    align-self: flex-start;
+  }
+
+  .user-heading {
+    flex-grow: 4;
+    margin-right:3rem;
+    width: 100%;
+    align-self: flex-start;
+
+    .user-info{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+  }
+
+
+/* for mobile */
+  @media screen and (max-width: $g-breakpoint-mobile) {
+    flex-direction: column;
+    .user-pic {
+      order: -1;
+      align-self: center;
+    }
+
+    .user-heading {
+      margin-right: auto;
+
+      .user-info{
+        flex-direction: column;
+      }
+    }
+  }
+  @media screen and (min-width: $g-breakpoint-mobile) {
+
+  }
+}

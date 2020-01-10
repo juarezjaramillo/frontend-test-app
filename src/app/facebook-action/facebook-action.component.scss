@@ -1,0 +1,22 @@
+button {
+  border-radius: 25px;
+  background: #EBEBEB;
+  padding: 2px 4px 2px 2px;
+  border-color: transparent;
+  position: relative;
+
+  .icon {
+    color: #3A5795;
+    font-size: 1.9em;
+    float: left;
+    position: absolute;
+    top: 0;
+  }
+
+  .title {
+    margin-left: 2rem;
+    margin-right: 4px;
+    line-height: 1.5rem;
+  }
+
+}

@@ -1,0 +1,11 @@
+$g-breakpoint-mobile: 480px;
+$g-breakpoint-tablet: 768px;
+$g-breakpoint-desktop: 900px;
+
+img {
+  @media screen and (max-width: $g-breakpoint-mobile) {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+  }
+}

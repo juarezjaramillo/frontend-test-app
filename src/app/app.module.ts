@@ -2,13 +2,31 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { UserHomeComponent } from './user-home/user-home.component';
+import { UserPicComponent } from './user-pic/user-pic.component';
+import { UserNameComponent } from './user-name/user-name.component';
+import { FacebookActionComponent } from './facebook-action/facebook-action.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ExpandableViewComponent } from './expandable-view/expandable-view.component';
+import { StoryListComponent } from './story-list/story-list.component';
+import { StoryItemComponent } from './story-item/story-item.component';
+import { StoryPanelComponent } from './story-panel/story-panel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserHomeComponent,
+    UserPicComponent,
+    UserNameComponent,
+    FacebookActionComponent,
+    ExpandableViewComponent,
+    StoryListComponent,
+    StoryItemComponent,
+    StoryPanelComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
