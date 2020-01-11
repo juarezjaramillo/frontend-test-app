@@ -1,19 +1,16 @@
-$g-breakpoint-mobile: 480px;
-$g-breakpoint-tablet: 768px;
-$g-breakpoint-desktop: 900px;
+@import "../../variables";
 
-
-.container {
+.home {
   display: flex;
   flex-direction: row;
   align-items: center;
 
-  .user-pic {
+  .pic {
     order: 2;
     align-self: flex-start;
   }
 
-  .user-heading {
+  .info-panel {
     flex-grow: 4;
     margin-right:3rem;
     width: 100%;
@@ -23,28 +20,28 @@ $g-breakpoint-desktop: 900px;
       display: flex;
       flex-direction: row;
       align-items: center;
-    }
 
+	  .actions {
+		margin-left: .5rem;
+	  }
+    }
   }
 
 
-/* for mobile */
+  /* for mobile */
   @media screen and (max-width: $g-breakpoint-mobile) {
     flex-direction: column;
-    .user-pic {
+    .pic {
       order: -1;
       align-self: center;
     }
 
-    .user-heading {
+    .info-panel {
       margin-right: auto;
 
       .user-info{
         flex-direction: column;
       }
     }
-  }
-  @media screen and (min-width: $g-breakpoint-mobile) {
-
   }
 }

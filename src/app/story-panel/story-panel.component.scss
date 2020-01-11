@@ -1,5 +1,9 @@
+@import "../../variables";
+
 .story-count {
-  font-size: 14px;
-  color: #19ACF0;
+  font-size: .875rem;
+  color: $g-color-link;
   line-height: 2rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
 }

@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Story} from '../entity/story';
 
 @Component({
-  selector: 'app-story-item',
-  templateUrl: './story-item.component.html',
-  styleUrls: ['./story-item.component.scss']
+	selector: 'app-story-item',
+	templateUrl: './story-item.component.html',
+	styleUrls: ['./story-item.component.scss']
 })
-export class StoryItemComponent implements OnInit {
+export class StoryItemComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+	@Input() story: Story;
 
 }

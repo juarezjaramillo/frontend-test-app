@@ -1,3 +1,1 @@
-<app-story-item [class.app-story-item]="true"></app-story-item>
-<app-story-item [class.app-story-item]="true"></app-story-item>
-<app-story-item [class.app-story-item]="true"></app-story-item>
+<app-story-item [class.app-story-item]="true" *ngFor="let story of stories;" [story]="story"></app-story-item>

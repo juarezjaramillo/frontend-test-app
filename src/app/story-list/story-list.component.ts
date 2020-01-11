@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Story} from '../entity/story';
 
 @Component({
-  selector: 'app-story-list',
-  templateUrl: './story-list.component.html',
-  styleUrls: ['./story-list.component.scss']
+	selector: 'app-story-list',
+	templateUrl: './story-list.component.html',
+	styleUrls: ['./story-list.component.scss']
 })
-export class StoryListComponent implements OnInit {
+export class StoryListComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+	@Input() stories: Story[] = [];
 
 }
