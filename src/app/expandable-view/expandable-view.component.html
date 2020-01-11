@@ -1,10 +1,11 @@
-<div class="container" [class.collapsed]="collapsed">
-  <div class="content" #content>
-    <ng-content></ng-content>
-  </div>
-  <div class="alpha" *ngIf="collapsed">
-  </div>
-  <div class="chevron">
-    <fa-icon [icon]="chevronIcon" (click)="toggle()"></fa-icon>
-  </div>
+<div class="expandable-view" [class.collapsed]="collapsed">
+	<div class="content" #content>
+		<ng-content></ng-content>
+	</div>
+	<div class="alpha" *ngIf="collapsed">
+	</div>
+	<button class="expandable-view__button">
+		<fa-icon class="expandable-view__chevron" [icon]="collapsed ? faChevronDown : faChevronUp"
+				 (click)="toggle()"></fa-icon>
+	</button>
 </div>

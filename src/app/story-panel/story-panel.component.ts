@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {faChevronCircleDown, faChevronCircleUp} from '@fortawesome/free-solid-svg-icons';
+import {faChevronDown, faChevronUp} from '@fortawesome/free-solid-svg-icons';
 import {Story} from '../entity/story';
 
 @Component({
@@ -9,8 +9,8 @@ import {Story} from '../entity/story';
 })
 export class StoryPanelComponent {
 	collapsedStoryList = false;
-	faChevronCircleDown = faChevronCircleDown;
-	faChevronCircleUp = faChevronCircleUp;
+	faChevronDown = faChevronDown;
+	faChevronUp = faChevronUp;
 	@Input() stories: Story[] = [];
 
 }

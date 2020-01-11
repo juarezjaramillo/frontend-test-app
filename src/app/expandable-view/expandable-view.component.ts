@@ -1,5 +1,5 @@
 import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
-import {faChevronCircleDown, faChevronCircleUp} from '@fortawesome/free-solid-svg-icons';
+import {faChevronCircleDown, faChevronCircleUp, faChevronDown, faChevronUp} from '@fortawesome/free-solid-svg-icons';
 import {of} from 'rxjs';
 import {delay} from 'rxjs/operators';
 
@@ -10,10 +10,10 @@ import {delay} from 'rxjs/operators';
 })
 export class ExpandableViewComponent implements AfterViewInit {
 
-	faChevronCircleDown = faChevronCircleDown;
-	faChevronCircleUp = faChevronCircleUp;
-	chevronIcon = faChevronCircleUp;
-	collapsed = false;
+	maxDefaultHeight = 100;
+	faChevronDown = faChevronDown;
+	faChevronUp = faChevronUp;
+	collapsed = true;
 	height = 0;
 	@ViewChild('content', {static: false}) content: ElementRef;
 
@@ -22,7 +22,7 @@ export class ExpandableViewComponent implements AfterViewInit {
 		// Wait a tick - instead of using setTimeout
 		of(true).pipe(delay(10)).subscribe(() => {
 
-			if (this.height > 80) {
+			if (this.height > this.maxDefaultHeight) {
 				this.collapsed = true;
 			}
 		});

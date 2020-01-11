@@ -11,6 +11,7 @@ The installation process may prompt you to share anonymous usage data with the A
 # Run locally
 Run `npm run start` for a local dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+The test data shown in the application is hardcoded in `src/app/app.component.ts`
 
 ## Build
 
