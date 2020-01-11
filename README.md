@@ -6,6 +6,8 @@ This project was generated for the XWP Code Challenge
 
 Run `npm install`
 
+The installation process may prompt you to share anonymous usage data with the Angular Team.
+
 # Run locally
 Run `npm run start` for a local dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
