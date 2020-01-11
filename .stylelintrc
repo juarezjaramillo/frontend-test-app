@@ -1,29 +1,39 @@
 {
-	"plugins": [
-		"stylelint-no-unsupported-browser-features"
-	],
-	"rules": {
-		"at-rule-no-unknown": null,
-		"at-rule-empty-line-before": [ "always", {
-			"except": [ "blockless-after-blockless", "first-nested"],
-			"ignore": ["after-comment"],
-			"ignoreAtRules": [ "else", "elseif" ]
-		} ],
-
-		"plugin/no-unsupported-browser-features": [
-			true,
-			{
-				"ignore": [
-					"outline",
-					"flexbox",
-					"outline",
-					"viewport-units",
-					"will-change",
-					"border-radius",
-					"css-boxshadow"
-				],
-				"severity": "warning"
-			}
+  "plugins": [
+	"stylelint-no-unsupported-browser-features"
+  ],
+  "rules": {
+	"at-rule-no-unknown": null,
+	"at-rule-empty-line-before": [
+	  "always",
+	  {
+		"except": [
+		  "blockless-after-blockless",
+		  "first-nested"
+		],
+		"ignore": [
+		  "after-comment"
+		],
+		"ignoreAtRules": [
+		  "else",
+		  "elseif"
 		]
-	}
+	  }
+	],
+	"plugin/no-unsupported-browser-features": [
+	  true,
+	  {
+		"ignore": [
+		  "outline",
+		  "flexbox",
+		  "outline",
+		  "viewport-units",
+		  "will-change",
+		  "border-radius",
+		  "css-boxshadow"
+		],
+		"severity": "warning"
+	  }
+	]
+  }
 }

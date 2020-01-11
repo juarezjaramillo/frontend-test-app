@@ -1,18 +1,18 @@
 <div class="home">
-  <div class="pic">
-    <app-user-pic [srcset]="user?.picSet" [src]="user?.pic"></app-user-pic>
-  </div>
-  <div class="info-panel">
-    <div class="user-info">
-      <div class="name">
-        <app-user-name [name]="user?.name"></app-user-name>
-      </div>
-      <div class="actions">
-        <app-facebook-action (click)="facebookActionClicked()"></app-facebook-action>
-      </div>
-    </div>
-    <div class="stories">
-      <app-story-panel [stories]="stories"></app-story-panel>
-    </div>
-  </div>
+	<div class="pic">
+		<app-user-pic [srcset]="user?.picSet" [src]="user?.pic"></app-user-pic>
+	</div>
+	<div class="info-panel">
+		<div class="user-info">
+			<div class="name">
+				<app-user-name [name]="user?.name"></app-user-name>
+			</div>
+			<div class="actions">
+				<app-facebook-action (click)="facebookActionClicked()"></app-facebook-action>
+			</div>
+		</div>
+		<div class="stories">
+			<app-story-panel [stories]="stories"></app-story-panel>
+		</div>
+	</div>
 </div>
